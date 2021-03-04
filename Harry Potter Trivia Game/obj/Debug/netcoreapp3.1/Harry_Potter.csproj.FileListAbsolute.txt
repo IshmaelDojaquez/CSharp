@@ -1,0 +1,13 @@
+C:\Users\ish20\source\repos\TriviaGame\Harry_Potter\obj\Debug\netcoreapp3.1\Harry_Potter.csprojAssemblyReference.cache
+C:\Users\ish20\source\repos\TriviaGame\Harry_Potter\obj\Debug\netcoreapp3.1\Harry_Potter.AssemblyInfoInputs.cache
+C:\Users\ish20\source\repos\TriviaGame\Harry_Potter\obj\Debug\netcoreapp3.1\Harry_Potter.AssemblyInfo.cs
+C:\Users\ish20\source\repos\TriviaGame\Harry_Potter\obj\Debug\netcoreapp3.1\Harry_Potter.csproj.CoreCompileInputs.cache
+C:\Users\ish20\source\repos\TriviaGame\Harry_Potter\bin\Debug\netcoreapp3.1\Harry_Potter.exe
+C:\Users\ish20\source\repos\TriviaGame\Harry_Potter\bin\Debug\netcoreapp3.1\Harry_Potter.deps.json
+C:\Users\ish20\source\repos\TriviaGame\Harry_Potter\bin\Debug\netcoreapp3.1\Harry_Potter.runtimeconfig.json
+C:\Users\ish20\source\repos\TriviaGame\Harry_Potter\bin\Debug\netcoreapp3.1\Harry_Potter.runtimeconfig.dev.json
+C:\Users\ish20\source\repos\TriviaGame\Harry_Potter\bin\Debug\netcoreapp3.1\Harry_Potter.dll
+C:\Users\ish20\source\repos\TriviaGame\Harry_Potter\bin\Debug\netcoreapp3.1\Harry_Potter.pdb
+C:\Users\ish20\source\repos\TriviaGame\Harry_Potter\obj\Debug\netcoreapp3.1\Harry_Potter.dll
+C:\Users\ish20\source\repos\TriviaGame\Harry_Potter\obj\Debug\netcoreapp3.1\Harry_Potter.pdb
+C:\Users\ish20\source\repos\TriviaGame\Harry_Potter\obj\Debug\netcoreapp3.1\Harry_Potter.genruntimeconfig.cache

@@ -1,18 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using Engine.EventArgs;
 using Engine.ViewModels;
+using System.Windows;
+using System.Windows.Documents;
 
 namespace WPFUI
 {
@@ -21,18 +10,49 @@ namespace WPFUI
     /// </summary>
     public partial class MainWindow : Window
     {
-        private GameSession gameSession;
+        private readonly GameSession gameSession = new GameSession();
         public MainWindow()
         {
             InitializeComponent();
 
-            gameSession = new GameSession();
+            gameSession.OnMessageRaised += OnGameMessageRaised;
 
             DataContext = gameSession;
         }
-        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        private void OnClick_MoveNorth(object sender, RoutedEventArgs e)
         {
-            gameSession.CurrentPlayer.ExperiencePoints = gameSession.CurrentPlayer.ExperiencePoints + 10;
+            gameSession.MoveNorth();
+        }
+
+        private void OnClick_MoveWest(object sender, RoutedEventArgs e)
+        {
+            gameSession.MoveWest();
+        }
+
+        private void OnClick_MoveEast(object sender, RoutedEventArgs e)
+        {
+            gameSession.MoveEast();
+        }
+
+        private void OnClick_MoveSouth(object sender, RoutedEventArgs e)
+        {
+            gameSession.MoveSouth();
+        }
+        private void OnClick_AttackMonster(object sender, RoutedEventArgs e)
+        {
+            gameSession.AttackCurrentMonster();
+        }
+        private void OnGameMessageRaised(object sender, GameMessageEventArgs e)
+        {
+            GameMessages.Document.Blocks.Add(new Paragraph(new Run(e.Message)));
+            GameMessages.ScrollToEnd();
+        }
+        private void OnClick_DisplayTradeScreen(object sender, RoutedEventArgs e)
+        {
+            TradeScreen tradeScreen = new TradeScreen();
+            tradeScreen.Owner = this;
+            tradeScreen.DataContext = gameSession;
+            tradeScreen.ShowDialog();
         }
     }
 }
